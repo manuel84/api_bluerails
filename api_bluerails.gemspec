@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email = ['manueldudda@redpeppix.de']
   spec.summary = 'Tools for developing an API written in Rails with api blueprint documentation'
   spec.description = 'Tools for developing an API written in Rails with api blueprint documentation'
-  spec.homepage = ''
+  spec.homepage = 'https://github.com/manuel84/api_bluerails'
   spec.license = 'MIT'
 
   spec.files = `git ls-files -z`.split("\x0")
