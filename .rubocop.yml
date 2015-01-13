@@ -1,0 +1,10 @@
+# This is the configuration used to check the rubocop source code.
+
+
+AllCops:
+  Exclude:
+    - 'Guardfile'
+    - 'api_bluerails.gemspec'
+
+Style/Encoding:
+  Enabled: true

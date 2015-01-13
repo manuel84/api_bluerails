@@ -1,0 +1,31 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.1.2
+  - 2.1.0
+  #- jruby-18mode
+  # - jruby-19mode
+  - rbx-2
+  # - ruby-head
+  #- jruby-head
+  #- ree
+
+env:
+  #
+
+services:
+  #
+
+before_install:
+  - gem update --system
+  - gem --version
+
+before_script:
+  # - bundle exec rake db:setup
+
+script:
+  - bundle exec rubocop lib spec -c .rubocop.yml
+  - CODECLIMATE_REPO_TOKEN=5b233d0a320b5ff33cf0190b72eaf28271d8a211e54cfaa369c52176e4f8974c bundle exec rake
+
+after_script:
+  # - bundle exec rake db:setup

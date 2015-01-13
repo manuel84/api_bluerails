@@ -1,4 +1,4 @@
-# coding: utf-8
+# encoding: UTF-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'api_bluerails/version'
@@ -18,5 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
   spec.add_runtime_dependency 'rails'
-
+  spec.add_development_dependency 'guard-rubocop'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'codeclimate-test-reporter'
 end
