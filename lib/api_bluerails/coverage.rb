@@ -116,18 +116,16 @@ module ApiBluerails
         # if version not set => merge them all!
         basename = 'paij_backend'
         basename << "_v#{version}" if version.to_i > 0
-
-        # create folder if not existing!
         path = Rails.root.join ''
         ['doc', 'gen', sub_dir, "#{basename}.#{file_extension}"].each do |subdir|
           path = path.join subdir
-          Dir.mkdir(path.dirname) unless Dir.exists?(path.dirname)
+          Dir.mkdir(path.dirname) unless Dir.exist?(path.dirname)
         end
         path
       end
 
       # version [int] or "all" as special-case
-      def api_doc_location version=nil
+      def api_doc_location(version = nil)
         doc_location version, 'api', 'apib'
       end
     end
