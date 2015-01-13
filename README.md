@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/manuel84/api_bluerails/badges/gpa.svg)](https://codeclimate.com/github/manuel84/api_bluerails)
 # Api Bluerails
 
 This project uses MIT-LICENSE.
