@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/manuel84/api_bluerails.svg)](https://travis-ci.org/manuel84/api_bluerails)
 [![Code Climate](https://codeclimate.com/github/manuel84/api_bluerails/badges/gpa.svg)](https://codeclimate.com/github/manuel84/api_bluerails)
 # Api Bluerails
 
